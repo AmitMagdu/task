@@ -81,11 +81,11 @@ let listTransactions = async (req, res) => {
     const totalPages = Math.ceil(totalRecords / perPage);
 
     res.json({
-      transactions,       // Array of transactions for the current page
-      total_pages: totalPages,  // Total number of pages
-      total_records: totalRecords, // Total number of matching records
-      current_page: pageNumber,  // Current page number
-      per_page: perPage          // Number of records per page
+      transactions,       
+      total_pages: totalPages,  
+      total_records: totalRecords, 
+      current_page: pageNumber,  
+      per_page: perPage          
       
     });
   } catch (error) {
