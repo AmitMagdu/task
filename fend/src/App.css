@@ -1,0 +1,188 @@
+/* #heading{
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head{
+  width: 10%;
+  height: 30vh;
+  border-radius: 30%;
+  background-color: aqua;
+  text-align: center;
+
+} */
+
+
+
+/* Styling for the entire page */
+*{
+  margin: 0px;
+  
+}
+#all{
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+}
+.transactions-page {
+  font-family: Arial, sans-serif;
+  margin:0px 30px;
+  
+}
+
+#center{
+  display: flex;
+  justify-content: center;
+
+  
+}
+/* Styling for the page title */
+.page-title {
+  width: 13%;
+  height: 15vh;
+  margin: 20px;
+  padding-top: 10vh;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: white;
+  border-radius: 50%;
+  
+}
+
+/* Styling for the month selector */
+.month-selector {
+  margin: 10px 0;
+  padding: 5px;
+  font-size: 14px;
+  width: 150px;
+  border-radius: 4px;
+  background-color: #f5db70;
+}
+
+/* Styling for the search box */
+.search-box {
+  margin: 10px 0;
+  padding: 8px;
+  font-size: 14px;
+  width: 200px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  float: right;
+  background-color: #f5db70;
+}
+
+
+/* Styling for the transactions table */
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  border:2px solid black;
+  background-color: #f5db70;
+  
+}
+
+/* Table header and data cell styling */
+.transactions-table th, .transactions-table td {
+  padding: 10px;
+  border: 2px solid #080808;
+  text-align: left;
+}
+
+.transactions-table th {
+  background-color: #f4f4f4;
+}
+
+/* Styling for the images in the table */
+.transaction-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+/* Styling for the pagination buttons */
+.pagination-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.pagination-btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.pagination-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination-info {
+  align-self: center;
+}
+
+
+
+/*statics*/
+
+.statistics-container {
+  margin: 100px;
+  padding: 15px;
+  background-color: #f5db70;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  width: 20%;
+  max-width: 500px; /* Adjust width */
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.statistics-container h3 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* .stat-item {
+  font-size: 16px;
+  margin: 8px 0;
+  color: #555;
+  padding: 5px 0;
+} */
+
+
+/*bar chart */
+
+.bar-chart-container {
+  margin: 20px auto;  /* Center the container */
+  width: 80%;  /* Adjust the width of the container */
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;  /* Center the title */
+}
+
+.bar-chart-container h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.bar-chart-container canvas {
+  width: 100% !important;  /* Ensure the chart takes full width */
+  height: auto !important;
+}
+
