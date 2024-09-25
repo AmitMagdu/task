@@ -73,8 +73,8 @@ let listTransactions = async (req, res) => {
 
     // Get filtered transactions with pagination
     const transactions = await Productmodel.find(query)
-      .skip((pageNumber - 1) * perPage) // Skip the records for the current page
-      .limit(perPage); // Limit the number of records to `perPage`
+      .skip((pageNumber - 1) * perPage) 
+      .limit(perPage); 
 
     // Get total number of records
     const totalRecords = await Productmodel.countDocuments(query);
